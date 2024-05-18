@@ -1,6 +1,6 @@
 # Log in Discord
 
-Want something simpler than Sentry, Datadog, etc.? Do you want to log your app's information to Discord like a console.log in production? Simple and easy, with no cost? This is a good alternative.
+Want something simpler than Sentry, Datadog, etc.? Do you want to log your app's information to Discord like a console.log in production? Simple and easy, with no cost? Discord webhooks are a good alternative. I do a lot of this in my projects, so I created a package to help me with that and I want to share it with you.
 
 This package allows you to easily log information to Discord using webhooks. You can specify different webhooks for different types of logs, and you can log any type of information.
 
@@ -72,20 +72,17 @@ You can create as many commands as you need. The name is the label you will use 
 Import the logger in your code and use it to log information to Discord:
 
 ```typescript
+// Example usage
 import { DiscordLogger } from "discord-as-logger";
 
-// Example usage
 const fakeData = { user: "John Doe", action: "login" };
 
-// logs to default webhook
 DiscordLogger.send({ label: "default", value: fakeData, type: "info" });
-
-// logs to a custom webhook
 DiscordLogger.send({
   label: "UserFlow",
   value: { user: "John Doe", step: "authenticated" },
   type: "success",
-}); // logs to UserFlow webhook
+});
 
 try {
   throw new Error("This is an error");
