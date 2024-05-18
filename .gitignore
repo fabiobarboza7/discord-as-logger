@@ -1,0 +1,8 @@
+node_modules/
+dist/
+send-log-to-discord.json
+src
+.npmignore
+package*
+tsconfig*
+tsup
