@@ -16,10 +16,30 @@ I hope you find it useful. If so, buy me a coffee to keep me awake and coding!
 
 ## Installation
 
-Install the package using npm:
+Install the package using your preferred package manager:
+
+### npm
 
 ```sh
 npm install discord-as-logger
+```
+
+### Yarn
+
+```sh
+yarn add discord-as-logger
+```
+
+### pnpm
+
+```sh
+pnpm add discord-as-logger
+```
+
+### Bun
+
+```sh
+bun add discord-as-logger
 ```
 
 ## Configuration
@@ -82,10 +102,10 @@ try {
 
 Method `send` has the following parameters:
 
-| key   | type     | description                                                                |
-| :---- | :------- | :------------------------------------------------------------------------- |
-| label | `string` | **Required**. The label you used in the configuration file.                |
-| value | `any`    | **Required**. The information you want to log.                             |
+| key   | type     | description                                                             |
+| :---- | :------- | :---------------------------------------------------------------------- |
+| label | `string` | **Required**. The label you used in the configuration file.             |
+| value | `any`    | **Required**. The information you want to log.                          |
 | type  | `string` | Optional. The type of log. Can be `info`, `success`, `warn` or `error`. |
 
 ## Be aware
