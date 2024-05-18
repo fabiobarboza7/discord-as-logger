@@ -5,5 +5,5 @@ src
 .npmignore
 package*
 tsconfig*
-tsup
+tsup*
 .prettierignore
