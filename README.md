@@ -19,14 +19,14 @@ I hope you find it useful. If so, buy me a coffee to keep me awake and coding!
 Install the package using npm:
 
 ```sh
-npm install send-log-to-discord
+npm install discord-logger
 ```
 
 ## Configuration
 
 Go to your Discord server, right-click on the channel you want to log to, and click on "Edit Channel". Go to the "Integrations" tab and click on "Create Webhook". Copy the webhook URL. You can create multiple webhooks for different types of logs.
 
-Create a send-log-to-discord.json file in the root of your project with the following structure:
+Create a discord-logger.json file in the root of your project with the following structure:
 
 ```json
 {
@@ -52,7 +52,7 @@ You can create as many commands as you need. The name is the label you will use 
 Import the logger in your code and use it to log information to Discord:
 
 ```typescript
-import { DiscordLogger } from "send-log-to-discord";
+import { DiscordLogger } from "discord-logger";
 
 // Example usage
 const fakeData = { user: "John Doe", action: "login" };
