@@ -6,3 +6,4 @@ src
 package*
 tsconfig*
 tsup
+.prettierignore
