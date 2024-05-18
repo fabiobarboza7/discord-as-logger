@@ -86,7 +86,7 @@ Method `send` has the following parameters:
 | :---- | :------- | :------------------------------------------------------------------------- |
 | label | `string` | **Required**. The label you used in the configuration file.                |
 | value | `any`    | **Required**. The information you want to log.                             |
-| type  | `string` | Optional. The type of log. Can be "info", "success", "warning" or "error". |
+| type  | `string` | Optional. The type of log. Can be `info`, `success`, `warn` or `error`. |
 
 ## Be aware
 
