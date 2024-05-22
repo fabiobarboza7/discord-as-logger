@@ -1,6 +1,6 @@
 node_modules/
 dist/
-discord-as-logger.json
+.discord-logger-config.json
 src
 .npmignore
 package*

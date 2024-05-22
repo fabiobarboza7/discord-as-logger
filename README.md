@@ -46,7 +46,7 @@ bun add discord-as-logger
 
 Go to your Discord server, right-click on the channel you want to log to, and click on "Edit Channel". Go to the "Integrations" tab and click on "Create Webhook". Copy the webhook URL. You can create multiple webhooks for different types of logs.
 
-Create a discord-as-logger.json file in the root of your project with the following structure:
+Create a .discord-logger-config.json file in the root of your project with the following structure:
 
 ```json
 {
